@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 15px;
+  background-color: #000000;
+  color: white;
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px; // spacing between logo and links
+
+    .logo {
+      width: 20%;
+      height: 10%;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 62px;
+      padding: 0;
+      margin: 0;
+
+      li {
+        cursor: pointer;
+
+        &.active {
+          color: white;
+        }
+
+        &:hover {
+          color: rgb(222, 6, 7);
+        }
+      }
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+    opacity: 85%;
+    .profile {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}

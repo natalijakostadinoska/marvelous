@@ -1,0 +1,57 @@
+.plan-card {
+  border: 1px solid #555;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    width: 300px;
+    background: #111;
+    color: white;
+    transition: transform 0.3s;
+    height: 351px;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin: 1rem 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+
+      &.included {
+        color: #8f8;
+      }
+
+      &.excluded {
+        color: #f88;
+      }
+    }
+  }
+
+  &.featured {
+    background: linear-gradient(to bottom, #b30000, #330000);
+    border: none;
+    transform: scale(1.05);
+    .price {
+      color: white;
+    }
+
+    .choose-btn {
+      margin-top: 1rem;
+      background: transparent;
+      border: 1px solid white;
+      padding: 0.5rem 1.2rem;
+      color: white;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: #111;
+
+  .movie-card {
+    width: calc(100% / 6 - 1rem); // 6 columns with gap
+    max-width: 150px;
+    background: #222;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

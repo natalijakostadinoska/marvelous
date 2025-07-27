@@ -1,0 +1,22 @@
+.hero-banner {
+  height: 300vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+
+  .overlay {
+    background: linear-gradient(to top, #141414 60%, transparent);
+    padding: 3rem;
+    color: white;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      max-width: 500px;
+      margin-top: 1rem;
+    }
+  }
+}
